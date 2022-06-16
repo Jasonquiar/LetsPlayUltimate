@@ -14,11 +14,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
 }
+
 header {
   position: relative;
   display: flex;
@@ -51,10 +53,16 @@ header img {
 }
 
 .header--title-container h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
+}
+
+.header--title-container h2 {
+  color:var(--off-white);
+  font-size: 2.2rem;
+  line-height:3rem;
 }
 .header--title-container p {
   margin-top: 25px;
@@ -357,6 +365,9 @@ main {
   line-height: 1.8rem;
   color: #808080;
 }
+.product--card_body a{
+  color: #f7931a;
+}
 .bitcoin-img-container {
   width: 100%;
   min-width: 320px;
@@ -436,7 +447,7 @@ main {
 }
 .plans-container--card .plan-card--price {
   padding: 5px 0;
-  font-size: 5.3rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 6.3rem;
   color: black;
