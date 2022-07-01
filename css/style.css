@@ -59,6 +59,15 @@ header img {
   color: var(--just-white);
 }
 
+.header--title-container span{
+  display: inline-block;
+  padding: 10;
+  width: 60px;
+  height: 60px;
+  background-image: url("../assets/img/isotipo-LetsPlayUltimate.svg");
+  background-repeat: no-repeat;
+}
+
 .header--title-container h2 {
   color:var(--off-white);
   font-size: 2.2rem;
@@ -268,13 +277,14 @@ main {
   padding: 20px 10px;
   background-color: var(--black);
 }
-.product-detail--batata-logo {
+.product-detail--LetsPlayUlt-logo {
   position: absolute;
-  width: 40.57px;
-  height: 24.01px;
-  left: calc(50% - 20px);
-  top: -10px;
-  background-image: url("../assets/icons/batata.svg");
+  width: 50px;
+  height: 50px;
+  left: calc(50% - 25px);
+  top: -18px; 
+  background-image: url("../assets/img/isotipo-LetsPlayUltimate.svg");
+  background-repeat: no-repeat;
 }
 .product-detail--title {
   width: 90%;
@@ -420,7 +430,7 @@ main {
   width: 70%;
   min-width: 230px;
   max-width: 300px;
-  height: 250px;
+  height: 210px;
   margin: 50px 30px 0;
   padding: 0 15px;
   background-color: var(--just-white);
@@ -502,5 +512,5 @@ footer section {
 }
 
 .right img {
-  max-width: 60px;
+  max-width: 40px;
 }
