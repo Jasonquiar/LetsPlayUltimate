@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --bitcoin-orange: #f7931a;
+  --Prymary-green: #06BF7B;
   --soft-orange: #ffe9d5;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
@@ -33,7 +33,7 @@ header {
   background: linear-gradient(
     208.83deg,
     var(--black) 16.69%,
-    var(--bitcoin-orange) 100%
+    var(--Prymary-green) 100%
   );
 }
 header img {
@@ -78,7 +78,7 @@ header img {
   display: block;
   margin-top: 35px;
   padding: 15px;
-  width: 229px;
+  width: 230px;
   height: 48px;
   background: var(--off-white);
   /* Sombra  */
@@ -90,6 +90,7 @@ header img {
   text-decoration: none;
   color: var(--black);
 }
+/* flecha hacia abajo del boton  */
 .header--title-container .header--button span {
   display: inline-block;
   width: 13px;
@@ -118,12 +119,12 @@ main {
   max-width: 900px;
   margin: 0 auto;
 }
-.main-exchange-container .backgroundImg {
+.main-exchange-container .LogoTornoe {
   width: 200px;
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url("../assets/img/Bitcoin.svg");
+  background-image: url("../assets/img/logo-GDV.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,7 +158,7 @@ main {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  color: var(--bitcoin-orange);
+  color: var(--Prymary-green);
 }
 .main-commissions-table .commissions-table--title {
   margin-bottom: 15px;
@@ -366,20 +367,20 @@ main {
   color: #808080;
 }
 .product--card_body a{
-  color: #f7931a;
+  color: var(--Prymary-green);
 }
-.bitcoin-img-container {
+.pull-img-container {
   width: 100%;
   min-width: 320px;
   height: 50vh;
-  background-image: url("../assets/img/bitcoinbaby2x.jpg");
+  background-image: url("../assets/img/piernas-jugadores.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   text-align: center;
 }
-.bitcoin-img-container h2 {
-  padding-top: 60px;
+.pull-img-container h2 {
+  padding-top: 220px;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
@@ -434,7 +435,7 @@ main {
   top: -15px;
   margin: 0;
   padding: 6px;
-  background-color: var(--bitcoin-orange);
+  background-color: var(--Prymary-green);
   border-radius: 8px;
   color: var(--just-white);
 }
@@ -460,7 +461,7 @@ main {
   height: 48px;
   margin-top: 20px;
   background: var(--off-white);
-  border: 2px solid var(--bitcoin-orange);
+  border: 2px solid var(--Prymary-green);
   border-radius: 4px;
   font-size: 1.4rem;
   font-weight: bold;
@@ -478,7 +479,7 @@ footer {
   display: flex;
   width: 100%;
   height: 150px;
-  background-color: var(--bitcoin-orange);
+  background-color: var(--Prymary-green);
 }
 footer section {
   display: flex;
@@ -498,4 +499,8 @@ footer section {
 .left a {
   text-decoration: none;
   color: var(--just-white);
+}
+
+.right img {
+  max-width: 60px;
 }
