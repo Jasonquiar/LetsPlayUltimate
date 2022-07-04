@@ -10,12 +10,14 @@
   --just-white: #fff;
   --grey: #bababa;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
+
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
@@ -47,7 +49,8 @@ header img {
   min-width: 288px;
   max-width: 900px;
   height: 218px;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
   align-self: center;
 }
@@ -99,6 +102,12 @@ header img {
   text-decoration: none;
   color: var(--black);
 }
+
+.header--button:hover{
+  background: var(--warm-black);
+  color: var(--just-white);
+}
+
 /* flecha hacia abajo del boton  */
 .header--title-container .header--button span {
   display: inline-block;
@@ -109,6 +118,10 @@ header img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.header--button span:hover{
+  background-image: url(../assets/icons/down-arrow-white.svg);
 }
 main {
   width: 100%;
@@ -152,8 +165,8 @@ main {
   line-height: 1.6rem;
   color: #757575;
 }
-.main-currency-table,
-.main-commissions-table {
+.main-group-table,
+.main-individual-table {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
@@ -162,22 +175,22 @@ main {
 
   font-family: "Inter", sans-serif;
 }
-.main-currency-table .currency-table--title {
+.main-group-table .group-table--title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--Prymary-green);
 }
-.main-commissions-table .commissions-table--title {
+.main-individual-table .individual-table--title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--secondary-blue);
 }
-.currency-table--container,
-.commissions-table--container {
+.group-table--container,
+.individual-table--container {
   width: 90%;
   min-width: 230px;
   max-width: 300px;
@@ -186,13 +199,13 @@ main {
   /* background-color: #fff; */
   border-radius: 15px;
 }
-.currency-table--container table,
-.commissions-table--container table {
+.group-table--container table,
+.individual-table--container table {
   width: 100%;
   height: 100%;
 }
-.currency-table--container td,
-.commissions-table--container td {
+.group-table--container td,
+.individual-table--container td {
   width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
@@ -201,30 +214,30 @@ main {
   /* border-bottom: 1px solid #faf8f7; */
   background-color: var(--just-white);
 }
-.currency-table--container .table__top-left,
-.commissions-table--container .table__top-left {
+.group-table--container .table__top-left,
+.individual-table--container .table__top-left {
   border-radius: 15px 0 0 0;
 }
-.currency-table--container .table__top-right,
-.commissions-table--container .table__top-right {
+.group-table--container .table__top-right,
+.individual-table--container .table__top-right {
   border-radius: 0 15px 0 0;
 }
-.currency-table--container .table__bottom-left,
-.commissions-table--container .table__bottom-left {
+.group-table--container .table__bottom-left,
+.individual-table--container .table__bottom-left {
   border-radius: 0 0 0 15px;
 }
-.currency-table--container .table__bottom-right,
-.commissions-table--container .table__bottom-right {
+.group-table--container .table__bottom-right,
+.individual-table--container .table__bottom-right {
   border-radius: 0 0 15px 0;
 }
-.currency-table--container .table__right,
-.commissions-table--container .table__right {
+.group-table--container .table__right,
+.individual-table--container .table__right {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
   color: #757575;
 }
-.currency-table--container .up {
+.group-table--container .up {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -234,7 +247,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.currency-table--container .down {
+.group-table--container .down {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -244,27 +257,27 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.currency-table--date {
-  width: 190px;
-  height: 31px;
+.group-table--date {
+  width: 230px;
+  height: 35px;
   margin: 0 auto;
   margin-top: 15px;
   padding: 8px;
   background-color: var(--soft-orange);
   border-radius: 8px;
 }
-.commissions-table--date {
-  width: 190px;
-  height: 31px;
+.individual-table--date {
+  width: 230px;
+  height: 35px;
   margin: 0 auto;
   margin-top: 15px;
   padding: 8px;
   background-color: var(--soft-blue);
   border-radius: 8px;
 }
-.currency-table--date p,
-.commissions-table--date p {
-  margin: 7px;
+.group-table--date p,
+.individual-table--date p {
+  margin: 8px;
   font-size: 1.2rem;
   line-height: 1.5px;
 }
@@ -312,8 +325,8 @@ main {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 152px;
-  margin: 15px auto;
+  height: 150px;
+  margin: 30px auto;
   padding: 15px;
   background-color: var(--warm-black);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
@@ -337,6 +350,28 @@ main {
   margin: 0 auto;
   margin-bottom: 10px;
   background-image: url("../assets/icons/eye.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-detail--card .water {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-image: url("../assets/icons/eye.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-detail--card .space {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-image: url("../assets/icons/dollar-sign.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -390,8 +425,8 @@ main {
   text-align: center;
 }
 .pull-img-container h2 {
-  padding-top: 220px;
-  font-size: 2.4rem;
+  padding-top: 300px;
+  font-size: 3.4rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
