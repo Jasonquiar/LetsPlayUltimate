@@ -182,6 +182,13 @@ main {
   line-height: 2.3rem;
   color: var(--Prymary-green);
 }
+.main-group-table .criterio-table--title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--warm-black);
+}
 .main-individual-table .individual-table--title {
   margin-bottom: 15px;
   font-size: 1.8rem;
@@ -260,7 +267,7 @@ main {
 .group-table--date {
   width: 230px;
   height: 35px;
-  margin: 0 auto;
+  margin: 20px auto;
   margin-top: 15px;
   padding: 8px;
   background-color: var(--soft-orange);
@@ -269,7 +276,7 @@ main {
 .individual-table--date {
   width: 230px;
   height: 35px;
-  margin: 0 auto;
+  margin: 20px auto;
   margin-top: 15px;
   padding: 8px;
   background-color: var(--soft-blue);
@@ -323,9 +330,9 @@ main {
 }
 .product-detail--card {
   width: 90%;
-  min-width: 288px;
+  min-width: 250px;
   max-width: 400px;
-  height: 150px;
+  height: 125px;
   margin: 30px auto;
   padding: 15px;
   background-color: var(--warm-black);
