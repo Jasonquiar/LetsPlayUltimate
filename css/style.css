@@ -30,7 +30,7 @@ header {
   justify-content: center;
   width: 100%;
   min-width: 320px;
-  height: 334px;
+  height: 380px;
   text-align: center;
   background: linear-gradient(
     208.83deg,
@@ -86,7 +86,7 @@ header img {
 .header--title-container .header--button {
   position: absolute;
   left: calc(50% - 118px);
-  top: 270px;
+  top: 325px;
   display: block;
   margin-top: 35px;
   padding: 15px;
